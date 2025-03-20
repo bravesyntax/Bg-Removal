@@ -1,0 +1,8 @@
+.bg-layer {
+  background-image: url(/bg_layer.png);
+  height: 90%;
+}
+
+.navigation {
+  margin-top: 3rem;
+}
