@@ -8,4 +8,4 @@ const dbConnect = async () => {
   await mongoose.connect(`${process.env.DATABASE_URL}/bgRemoval`);
 };
 
-export default dbConnect;
+export default dbConnect; // ✅ Use default export
