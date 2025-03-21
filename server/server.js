@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import dbConnect from "./config/database.js";
+import userRouter from "./routes/userRoute.js";
 
 dotenv.config();
 
@@ -14,6 +15,8 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Welcome to the Express server...");
 });
+
+app.use("/api/user", userRouter);
 
 // ✅ Export app instead of starting server directly
 export default app;
